@@ -1,14 +1,16 @@
-#! python3
-import pyautogui as pygui
+import subprocess
+import pyautogui
 
-
+subprocess.Popen(['clear'])
 print('Press Ctrl-C to quit.')
+
 try:
     while True:
         #TODO: Get and print the mouse coordinates.
-        x, y = pygui.position()
+        x, y = pyautogui.position()
         positionStr = 'X: ' + str(x).rjust(4) + ' Y: ' + str(y).rjust(4)
         print(positionStr, end='')
         print('\b' * len(positionStr), end='', flush=True)
+
 except KeyboardInterrupt:
     print('\nDone.')
