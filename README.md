@@ -1,3 +1,5 @@
-# heater
-Curses Based MP3 Player and ID3 Editor written in Python
-In Progress, come back later.
+# mousenow
+Continual print out of mouse x y coordinates.
+
+Dependencies:
+`pip install pyautogui`
